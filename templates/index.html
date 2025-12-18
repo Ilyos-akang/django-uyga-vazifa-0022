@@ -1,0 +1,27 @@
+<h1> Mahsulotlar </h1>
+
+<ul>
+    {% for products in product %}
+
+</ul>
+<ol>
+    
+    <li>
+        {{ products.name }}
+    </li>
+    
+    <li>
+        {{ products.price }}
+    </li>
+    
+    <li>
+        {{ products.description }}
+    </li>
+    
+    <li>
+        {{ products.created_at }}
+    </li>
+</ol> <br><hr>
+    {% empty %}
+    <li> Hech narsa mavjud emas </li>
+    {% endfor %}    
